@@ -8,31 +8,9 @@
 }
 
 .meme__layout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
     padding: 3vh 3vw;
     box-sizing: border-box;
     width: 100%;
-}
-
-.meme_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 90%;    
-}
-
-/* @media only screen and (max-width: 1279px) {
-    .meme_container {
-        height: 80%;    
-    }
-} */
-
-.meme__wrapper {
 }
 
 .meme__footer {
@@ -64,7 +42,7 @@
 .meme__image {
     max-width: 94vw;
     max-height: 83vh;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 

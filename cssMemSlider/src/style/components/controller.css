@@ -29,6 +29,8 @@
     background-color: blue;
     width: 2vw;
     height: 2vw;
+    border-style: solid;
+    border-color: blue;
     border-radius: 50%;
     display: inline-block;
 }
@@ -46,3 +48,26 @@
         height: 5vw;
     }
 }
+
+.controller__item:hover .controller__circle {
+    background-color: beige;
+    border-color: beige;
+}
+
+.controller__circle--active {
+    background-color: transparent;
+    border-color: blue;
+}
+
+.controller__item:hover .controller__circle {
+    background-color: beige;
+    border-color: beige;
+    transition: 0.2s;
+}
+
+.controller__item:active .controller__circle {
+    background-color: red;
+    border-color: red;
+    transition: 0.2s;
+}
+

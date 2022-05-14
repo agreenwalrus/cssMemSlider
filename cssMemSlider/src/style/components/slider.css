@@ -1,0 +1,62 @@
+.slider {
+
+}
+
+.slider__container {
+
+}
+
+.slider__item {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 94vw;
+    height: 90%;  
+}
+
+@keyframes appear-slide {
+    from {z-index: 0;}
+    to {z-index: 100;}
+}
+
+@keyframes appear-data {
+    from {}
+    to {opacity: 1;}
+}
+
+.slider__item .image__container, .meme__description, .meme__controller {
+    opacity: 0;
+}
+
+.slider .slider__item:target {
+	animation-name: appear-slide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-out;
+}
+
+.slider .slider__item:target .image__container {
+	animation-name: appear-data;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-out;
+}
+
+.slider .slider__item:target .meme__description {
+	animation-name: appear-data;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.slider .slider__item:target .meme__controller {
+    opacity: 1;
+}
+
+.image__container {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
