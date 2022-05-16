@@ -26,11 +26,11 @@
 }
 
 .controller__circle {
-    background-color: blue;
+    background-color: rgb(21, 136, 207);
     width: 2vw;
     height: 2vw;
     border-style: solid;
-    border-color: blue;
+    border-color: rgb(21, 136, 207);
     border-radius: 50%;
     display: inline-block;
 }
@@ -49,14 +49,9 @@
     }
 }
 
-.controller__item:hover .controller__circle {
-    background-color: beige;
-    border-color: beige;
-}
 
 .controller__circle--active {
     background-color: transparent;
-    border-color: blue;
 }
 
 .controller__item:hover .controller__circle {
@@ -66,8 +61,8 @@
 }
 
 .controller__item:active .controller__circle {
-    background-color: red;
-    border-color: red;
+    background-color: rgba(129, 153, 168, 0.925);
+    border-color: rgba(129, 153, 168, 0.925);
     transition: 0.2s;
 }
 
