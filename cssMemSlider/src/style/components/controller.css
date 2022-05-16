@@ -1,0 +1,68 @@
+.controller {
+    display: flex;
+}
+
+.controller__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1279px) {
+    .controller__item {
+        width: 3.75vw;
+        height: 3.75vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .controller__item {
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+}
+
+.controller__circle {
+    background-color: rgb(21, 136, 207);
+    width: 1vw;
+    height: 1vw;
+    border-style: solid;
+    border-color: rgb(21, 136, 207);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1279px) {
+    .controller__circle {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .controller__circle {
+        width: 3vw;
+        height: 3vw;
+    }
+}
+
+
+.controller__circle--active {
+    background-color: transparent;
+}
+
+.controller__item:hover .controller__circle {
+    background-color: beige;
+    border-color: beige;
+    transition: 0.2s;
+}
+
+.controller__item:active .controller__circle {
+    background-color: rgba(129, 153, 168, 0.925);
+    border-color: rgba(129, 153, 168, 0.925);
+    transition: 0.2s;
+}
+
